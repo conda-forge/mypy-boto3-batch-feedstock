@@ -1,5 +1,5 @@
 {% set name = "mypy-boto3-batch" %}
-{% set version = "1.14.27.0" %}
+{% set version = "1.14.28.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a0a7a01088f394b55695577ea11221cbd673ee0b637b7ceb769fc935cde3cf0c
+  sha256: 3fb56c9dda1e7a4e78408333f484b5ac2a4a6d4e09a674f3a05891a6edc87b63
 
 build:
   number: 0
