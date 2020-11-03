@@ -1,5 +1,5 @@
 {% set name = "mypy-boto3-batch" %}
-{% set version = "1.16.6.0" %}
+{% set version = "1.16.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4dc012924d0f51f938637ebbb0296121c8bf1c025bd27473223596a92c8b06cb
+  sha256: 7aa1a6fde6ea4b10649974255f27d0920f4605b368576a017e26448868cf0907
 
 build:
   number: 0
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3
   run:
-    - python
+    - python >=3
     - typing_extensions
     - botocore
 
